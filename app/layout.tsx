@@ -9,7 +9,7 @@ import './globalStyles/footer.scss';
 
 export const metadata: Metadata = {
   title: "TVL — Choose Your Favorite Tour To Explore",
-  description: "TVL — Choose Your Favorite Tour To Explore",
+  description: "TVL is a platform that allows you to choose your favorite tour to explore. Discover new places and experiences with ease.",
 };
 
 export default function RootLayout({

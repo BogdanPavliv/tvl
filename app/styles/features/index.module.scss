@@ -1,0 +1,131 @@
+/* section features start */
+
+.features {
+  padding: 100px 0 100px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__left {
+    max-width: 470px;
+  }
+
+  &__right {
+    max-width: 470px;
+  }
+
+  &__left__img_wrapper {
+    position: relative;
+  }
+
+  &__img__absolute {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+  }
+
+  &_title {
+    margin-bottom: 30px;
+  }
+
+  &__right__text {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    max-width: 430px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    padding-left: 48px;
+    margin-bottom: 32px;
+    position: relative;
+
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+  }
+
+  .check::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url("/img/section-features/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width:1150px) {
+  .features__img__absolute {
+    right: 0px;
+  }
+}
+
+@media (max-width:991px) {
+  .features {
+    padding: 50px 0 50px 0;
+  }
+
+  .features__inner {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .features__img__absolute {
+    right: -100px;
+  }
+
+  .features__right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+  .features__img__absolute {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 170px;
+  }
+}
+
+@media (max-width: 540px) {
+  .features__img__absolute {
+    width: 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .features__list {
+    column-gap: 15px;
+  }
+
+  .features__item {
+    padding-left: 42px;
+  }
+}
+
+/* section features end */

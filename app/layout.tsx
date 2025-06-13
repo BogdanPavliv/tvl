@@ -1,12 +1,11 @@
 import 'normalize.css';
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./styles/globals.scss";
-import HeaderTop from './components/headerTop';
-import Footer from './components/footer';
-import StoreProvider from './components/provider';
-
-const inter = Inter({ subsets: ["latin"] });
+import PagesLayout from './components/layouts/PagesLayout';
+import './globalStyles/normalize.css'
+import "./globalStyles/null.css";
+import "./globalStyles/globals.scss";
+import './globalStyles/header.scss';
+import './globalStyles/footer.scss';
 
 export const metadata: Metadata = {
   title: "TVL — Choose Your Favorite Tour To Explore",
@@ -18,15 +17,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>
-        <StoreProvider>
-          <HeaderTop />
-          {children}
-          <Footer />
-        </StoreProvider>
-      </body>
-    </html>
-  );
+  return <PagesLayout>{children}</PagesLayout>
 }

@@ -1,0 +1,24 @@
+.button_green {
+  max-width: 170px;
+  height: 48px;
+  padding: 14px 27px;
+  background-color: #52AA7F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "LexendZetta-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  transition: all 250ms ease-in;
+}
+
+.button_green:hover {
+  border: 1px solid #52AA7F;
+  background-color: transparent;
+  color: #52AA7F;
+}

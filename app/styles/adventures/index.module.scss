@@ -1,0 +1,109 @@
+/* section adventures start */
+
+.adventures {
+  padding: 150px 0 100px 0;
+
+  .badge_adventures {
+    text-align: center;
+  }
+
+  .adventures_title {
+
+    margin-bottom: 70px;
+  }
+}
+
+.expeditions {
+  margin-bottom: 64px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  &__list__item {
+    cursor: pointer;
+  }
+
+  &__list__image {
+    width: 100%;
+  }
+
+  &__list__content {
+    background-color: #FFF2F2;
+    padding: 24px 32px;
+    transition: all 250ms ease-in;
+  }
+
+  &__list__way {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    transition: all 250ms ease-in;
+
+    margin-bottom: 7px;
+  }
+
+  &__list__date {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    opacity: .5;
+    transition: all 250ms ease-in;
+
+    margin-bottom: 18px;
+  }
+
+  &__list__price {
+    font-family: "LexendZetta-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    transition: all 250ms ease-in;
+  }
+
+  &__list__item:hover {
+    .expeditions__list__content {
+      background-color: #6347F9;
+    }
+
+    .expeditions__list__way,
+    .expeditions__list__date,
+    .expeditions__list__price {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .adventures {
+    padding: 100px 0 50px 0;
+  }
+
+  .adventures .adventures-title {
+    margin-bottom: 35px;
+  }
+
+  .expeditions {
+    margin-bottom: 32px;
+  }
+
+  .expeditions__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .expeditions__list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* section adventures end */

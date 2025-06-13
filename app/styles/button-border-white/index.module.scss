@@ -1,0 +1,23 @@
+.button_border_white {
+  max-width: 170px;
+  height: 48px;
+  padding: 13px 35px;
+  border: 1px solid #FFFFFF4B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "LexendZetta-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+
+  transition: all 250ms ease-in;
+}
+
+.button_border_white:hover {
+  background-color: #fff;
+  color: #11253A;
+}

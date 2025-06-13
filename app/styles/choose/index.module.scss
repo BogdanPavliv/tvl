@@ -1,0 +1,42 @@
+/* section choose start */
+
+.choose {
+  padding: 170px 0 270px 0;
+  background-color: #6347F9;
+}
+
+.choose {
+  &__suptitle {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    max-width: 851px;
+    margin: 0 auto;
+    font-family: "LexendZetta-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .choose__title {
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+/* section choose end */

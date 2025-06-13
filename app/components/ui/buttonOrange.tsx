@@ -1,13 +1,12 @@
-import React, { ReactNode } from 'react'
+import styles from "../../styles/button-orange/index.module.scss";
+import { ButtonProps } from "../../types/buttons";
 
-type Props = {
-    children: ReactNode;
-}
-
-const ButtonOrange: React.FC<Props> = ({children}) => {
+const ButtonOrange: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <a className="button-orange" href="#">{children}</a>
-  )
-}
+    <a className={styles.button_orange} href="#">
+      {children}
+    </a>
+  );
+};
 
 export default ButtonOrange;

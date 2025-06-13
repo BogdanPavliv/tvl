@@ -1,0 +1,121 @@
+/* section offers start */
+
+.offers {
+  padding: 75px 0 115px 0;
+  background-color: rgba(254, 114, 84, 0.078);
+
+  .badge_offers {
+    text-align: center;
+  }
+
+  .offers_title {
+    max-width: 573px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+
+.destinations {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  &__list__item {
+    cursor: pointer;
+  }
+
+  &__list__imege {
+    width: 100%;
+  }
+
+  &__list__imege_wrapper {
+    position: relative;
+  }
+
+  .circle {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    width: 144px;
+    height: 144px;
+    background-color: #F07C52;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle__price {
+    font-family: "LexendZetta-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #fff;
+  }
+
+  &__list__imege_wrapper {
+    margin-bottom: 13px;
+  }
+
+  &__list__city {
+    font-family: "LexendZetta-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+    margin-bottom: 4px;
+  }
+
+  &__list__country {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 991px) {
+  .offers {
+    padding: 50px 0 50px 0;
+  }
+
+  .destinations__list {
+    gap: 15px;
+  }
+
+  .destinations .circle {
+    width: 72px;
+    height: 72px;
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .destinations .circle__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .offers .offers-title {
+    margin-bottom: 35px;
+  }
+
+  .destinations__list__city {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 670px) {
+  .destinations__list {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+  }
+}
+
+/* section offers end */

@@ -1,0 +1,24 @@
+.button_orange {
+  max-width: 154px;
+  height: 48px;
+  padding: 14px 27px;
+  background-color: #F07C52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "LexendZetta-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  transition: all 250ms ease-in;
+}
+
+.button_orange:hover {
+  border: 1px solid #F07C5280;
+  background-color: transparent;
+  color: #F07C52;
+}

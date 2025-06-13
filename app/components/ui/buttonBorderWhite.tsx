@@ -1,13 +1,12 @@
-import React, { ReactNode } from 'react';
+import styles from "../../styles/button-border-white/index.module.scss";
+import { ButtonProps } from "../../types/buttons";
 
-type Props = {
-    children: ReactNode;
-}
-
-const ButtonBorderWhite: React.FC<Props> = ({children}) => {
+const ButtonBorderWhite: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <a className="button-border-white" href="#">{children}</a>
-  )
-}
+    <a className={styles.button_border_white} href="#">
+      {children}
+    </a>
+  );
+};
 
 export default ButtonBorderWhite;

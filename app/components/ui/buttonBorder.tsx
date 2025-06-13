@@ -1,13 +1,12 @@
-import React, { ReactNode } from 'react'
+import styles from "../../styles/button-border/index.module.scss";
+import { ButtonProps } from "../../types/buttons";
 
-type Props = {
-    children: ReactNode;
-}
-
-const ButtonBorder: React.FC<Props> = ({children}) => {
+const ButtonBorder: React.FC<ButtonProps> = ({ children }) => {
   return (
-    <a className="button-border" href="#">{children}</a>
-  )
-}
+    <a className={styles.button_border} href="#">
+      {children}
+    </a>
+  );
+};
 
 export default ButtonBorder;

@@ -1,0 +1,130 @@
+/* section testimonials start */
+
+.testimonials {
+  padding: 100px 0 200px 0;
+  overflow-x: hidden;
+
+  .badge_testimonials {
+    text-align: center;
+  }
+
+  .testimonials_title {
+    max-width: 417px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    text-align: center;
+  }
+
+  &__slider__wrapper {
+    margin-left: -23px;
+    margin-right: -22px;
+  }
+
+  &__slide {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+
+  &__slide__response {
+    min-height: 320px;
+    padding: 58px 48px 72px;
+    background-image: url("/img/section-testimonials/message.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #3333337F;
+
+    position: relative;
+    margin-bottom: 18px;
+  }
+
+  &__slide__response::before {
+    position: absolute;
+    top: -20px;
+    left: 48px;
+    content: "";
+    width: 48px;
+    height: 36px;
+
+    background-image: url("/img/section-testimonials/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__slide__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__slide__name {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+
+    margin-bottom: 7px;
+  }
+
+  &__slide__role {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonials__slide__response {
+    background-position: bottom;
+    min-height: 256px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .testimonials__slider__wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .testimonials {
+    padding: 50px 0 200px 0;
+  }
+
+  .testimonials__slide {
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .testimonials__slide__response {
+    background-position: left;
+    padding: 48px 48px 82px;
+  }
+}
+
+@media (max-width: 540px) {
+  .testimonials__slide__response {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 400px) {
+  .testimonials__slide__response {
+    background-position: left;
+  }
+}
+
+/* section testimonials end */

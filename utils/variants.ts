@@ -1,4 +1,5 @@
-type Direction = 'up' | 'down' | 'left' | 'right'
+import { Direction } from "../app/types/others";
+
 export default function FadeIn(direction: Direction, delay: number) {
   return {
     hidden: {
